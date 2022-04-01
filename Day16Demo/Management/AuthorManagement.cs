@@ -53,7 +53,7 @@ namespace Day16Demo.Management
                     {
                         var editedAuthor = GenerateNewAuthor(author.Id);
 
-                        fileDataList[i] = editedAuthor.ToCsv;
+                        fileDataList[i] = editedAuthor.DataCsv;
 
                         File.WriteAllLines(filePath, fileDataList);
 
@@ -141,9 +141,9 @@ namespace Day16Demo.Management
         private void SaveToFile(Author author)
         {
             if (!File.Exists(filePath))
-                File.WriteAllText(filePath, Author.FormattedHeading);
+                File.WriteAllText(filePath, Author.HeadingCsv);
 
-            File.AppendAllText(filePath, author.FormattedData);
+            File.AppendAllText(filePath, author.DataCsv);
         }
 
         private static void DisplayDataFooter()

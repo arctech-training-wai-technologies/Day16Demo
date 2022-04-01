@@ -44,7 +44,9 @@ public class Author
 
     public string FormattedData => $"{Id,-10}{Name,-50}{Notes}";
 
-    public string ToCsv => $"{Id},{Name},{Notes}";
+    public string DataCsv => $"{Id},{Name},{Notes}\n";
+    
+    public static string HeadingCsv => $"{dataHeader}\n";
 
     public Author()
     {}

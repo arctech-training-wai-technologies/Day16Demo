@@ -8,17 +8,17 @@ using Day16Demo.Management;
 
 var authorManagement = new AuthorManagement();
 
-//authorManagement.Create();
+authorManagement.Create();
 //authorManagement.Create();
 //authorManagement.Create();
 
 authorManagement.List();
 
-authorManagement.Delete();
+//authorManagement.Delete();
 
 //authorManagement.Update();
 
-authorManagement.List();
+//authorManagement.List();
 
 
 
